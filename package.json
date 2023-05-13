@@ -1,0 +1,41 @@
+{
+  "name": "crosect-token",
+  "version": "1.0.0",
+  "description": "ccs token",
+  "main": "index.js",
+  "repository": "git@github.com:Crosect/crosect-token.git",
+  "author": "Crosect Labs",
+  "license": "MIT",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "deploy:test": "npx hardhat run scripts/deploy.js --network sepolia",
+    "verify:test": "npx hardhat verify --network etherium 0xa9E7F791B669f2535d100B196F615cA019d137b9 --show-stack-traces"
+  },
+  "devDependencies": {
+    "@ethersproject/abi": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@typechain/ethers-v5": "^10.2.1",
+    "@typechain/hardhat": "^6.1.6",
+    "chai": "^4.3.7",
+    "ethers": "^5.4",
+    "hardhat": "^2.14.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.2",
+    "typechain": "^8.1.1"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@openzeppelin/contract-loader": "^0.6.3",
+    "@openzeppelin/contracts": "^4.8.3",
+    "@openzeppelin/contracts-upgradeable": "^4.8.3",
+    "@openzeppelin/hardhat-upgrades": "^1.25.3",
+    "chalk": "^4.1.0",
+    "dotenv": "^16.0.3",
+    "ramda": "^0.29.0"
+  }
+}
